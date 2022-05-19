@@ -1,0 +1,35 @@
+name: alt_alpha
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  qidgets:
+    git: https://github.com/epatel/flutter_qidgets.git
+
+  flutter_blue_plus:
+    git:
+      url: https://github.com/SkuggaEdward/flutter_blue_plus.git
+      ref: 21d7bae2bb0b2fa5ba39d2cce2ad3c4adeb973f8
+
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.15
+  syncfusion_flutter_charts: ^19.4.52
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true

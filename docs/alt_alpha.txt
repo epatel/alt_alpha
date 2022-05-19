@@ -1,0 +1,23 @@
+Device name: "AltAlpha_#"
+
+BLE Service:            65706174-656C-2E61-6C70-68612E626C65
+Command Characteristic: 65706174-656C-2E62-6C65-2E636D642E2E
+Live Characteristic:    65706174-656C-2E62-6C65-2E6C6976652E
+Fetch Characteristic:   65706174-656C-2E62-6C65-2E6665746368
+
+States:
+=======
+    • Init   = 0x00
+    • Idle   = 0x01
+    • Live   = 0x02
+    • Record = 0x03
+    • Fetch  = 0x04
+
+Commands:
+=========
+    • RecordStart = 0x00
+    • RecordAbort = 0x01
+    • RecordFetch = 0x02
+    • RecordDone  = 0x03
+    • LiveStart   = 0x04
+    • LiveStop    = 0x05

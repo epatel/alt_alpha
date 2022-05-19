@@ -1,0 +1,21 @@
+digraph {
+  graph [rankdir=TB]
+
+  Start
+  Idle
+  Live
+  Record
+  Fetch
+
+  Start -> Idle    [label=Inited]
+
+  Idle -> Record   [label=RecordStart]
+  Idle -> Live     [label=LiveStart]
+
+  Record -> Idle   [label=RecordAbort]
+  Record -> Fetch  [label=RecordFetch]
+
+  Fetch -> Idle    [label=RecordDone]
+
+  Live -> Idle     [label=LiveStop]
+}
